@@ -3,10 +3,8 @@ import App from './App.vue'
 
 createApp(App).mount('#app')
 
-const fun = () =>
-{
-
-        console.log('Vue3 + TypeScript')
+const fun = () => {
+  console.log('Vue3 + TypeScript')
 }
 
 fun()
