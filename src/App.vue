@@ -3,9 +3,16 @@
     <h1>App根组件</h1>
   </div>
 </template>
+
 <script setup lang="ts">
 const str = 'App'
+
+for (let i = 0; i<100;i++)
+{
+  console.log(i);
+}
 </script>
+
 <style scoped lang="scss">
 .box {
   width: 600px;
