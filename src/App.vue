@@ -1,24 +1,20 @@
 <template>
-  <div class="box">
-    <h1>App根组件</h1>
+  <div>
+    <el-button type='primary' size='default' :icon='Plus'>主要按钮</el-button>
+    <el-button type='success' size='small' :icon='Edit'>编辑按钮</el-button>
+    <el-button type='danger' size='default' :icon='Delete'>主要按钮</el-button>
+    <el-pagination
+      :page-sizes="[100, 200, 300, 400]"
+      layout="total, sizes, prev, pager, next, jumper"
+      :total="400"
+    />
   </div>
 </template>
 
-<script setup lang="ts">
-const str = 'App'
-
-for (let i = 0; i < 100; i++) {
-  console.log(i)
-}
+<script setup lang='ts'>
+import {Plus, Edit, Delete} from '@element-plus/icons-vue'
 </script>
 
-<style scoped lang="scss">
-.box {
-  width: 600px;
-  height: 400px;
-  background-color: black;
-  h1 {
-    color: white;
-  }
-}
+<style scoped lang='scss'>
+
 </style>
